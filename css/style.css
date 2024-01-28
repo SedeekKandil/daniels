@@ -1,0 +1,652 @@
+/* 
+ */
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar-brand{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.nav-link{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    
+}
+
+
+.nav-link:hover{
+    color: black;
+}
+
+.navbar-nav .nav-link.active{
+    position: relative;
+}
+
+.navbar-nav .nav-link.active::after{
+    
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: 8px;
+    animation: line 1s both;
+    z-index: 3;
+}
+
+@keyframes line{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+
+}
+
+html{
+    scroll-padding-top: 85px;
+}
+
+#home{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#home .layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#home h5{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#home h1{
+    font-weight: 200;
+    font-size: 60px;
+}
+
+@media (max-width:992px) {
+    #home h1{
+        font-size: 40px;
+    }
+}
+
+
+#home .icon i{
+    width: 35px;
+    height: 35px;
+    background-color: RGBA(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+#home h1::after{
+    content: "|";
+    font-size: 60px;
+    font-weight: 400;
+    animation: typing 10s  infinite;
+}
+
+@keyframes typing{
+        0% {content: "|";}
+        2% {content: "D|";}
+        4% {content: "De|";}
+        6% {content: "Dev|";}
+        8% {content: "Deve|";}
+        10% {content: "Devel|";}
+        12% {content: "Develo|";}
+        14% {content: "Develop|";}
+        16% {content: "Develope|";}
+        18% {content: "Developer|";}
+        20% {content: "Develope|";}
+        22% {content: "Develop|";}
+        24% {content: "Develo|";}
+        26% {content: "Devel|";}
+        28% {content: "Deve|";}
+        30% {content: "Dev|";}
+        32% {content: "De|";}
+        34% {content: "D|";}
+        36% {content: "|";}
+        38% {content: "D|";}
+        40% {content: "De|";}
+        42% {content: "Des|";}
+        44% {content: "Desi|";}
+        46% {content: "Desig|";}
+        48% {content: "Design|";}
+        50% {content: "Designe|";}
+        52% {content: "Designer|";}
+        54% {content: "Designe|";}
+        55% {content: "Design|";}
+        56% {content: "Desig|";}
+        58% {content: "Desi|";}
+        60% {content: "Des|";}
+        61% {content: "De|";}
+        62% {content: "D|";}
+        64% {content: "|";}
+        66% {content: "L|";}
+        68% {content: "La|";}
+        70% {content: "Lar|";}
+        71% {content: "Larr|";}
+        72% {content: "Larry|";}
+        74% {content: "Larry |";}
+        76% {content: "Larry D|";}
+        78% {content: "Larry Da|";}
+        80% {content: "Larry Dan|";}
+        81% {content: "Larry Dani|";}
+        82% {content: "Larry Danie|";}
+        84% {content: "Larry Daniel|";}
+        86% {content: "Larry Daniels|";}
+        88% {content: "Larry Daniel|";}
+        89% {content: "Larry Danie|";}
+        90% {content: "Larry Dani|";}
+        91% {content: "Larry Dan|";}
+        92% {content: "Larry Da|";}
+        93% {content: "Larry D|";}
+        94% {content: "Larry |";}
+        95% {content: "Larry|";}
+        96% {content: "Larr|";}
+        97% {content: "Lar|";}
+        98% {content: "La|";}
+        99% {content: "L|";}
+        100% {content: "|";}
+        
+
+}
+
+
+#about .hero{
+    padding: 0 0 0 30px;
+    margin-bottom: 30px !important;
+    position: relative;
+}
+
+#about .hero::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#about h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+@media (max-width:992px) {
+    #about h3{
+        margin-top: 20px;
+    }
+}
+
+#about span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#about p{
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.progress{
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+#about .btn1{
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    transition: all .5s;
+}
+
+#about .btn2{
+    font-size: 15px;
+    transition: all .5s;
+}
+
+.btn1:hover {
+    background-color: white !important ;
+    color: black !important;
+    border: 1px black solid;
+}
+
+.btn2:hover{
+    background-color: black;
+    color: white;
+}
+
+#services{
+    position: relative;
+    
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #343434 ;
+    position: relative;
+    z-index: 1;
+}
+
+h3::after{
+    content: "";
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+
+#services i{
+    width: 80px;
+    height: 80px;
+    background-color: #F7F7F7;
+}
+
+#services h6{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#services p{
+    color: #748182;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+#services .hov i{
+    transition: all .5s;
+}
+
+#services .hov:hover i{
+    background-color: black !important;
+    color: white !important;
+}
+
+.nav-tabs{
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+
+.nav-tabs .nav-link{
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0;
+    margin: 20px;
+}
+
+.nav-tabs .nav-link.active{
+    position: relative;
+}
+
+
+.nav-tabs .nav-link.active::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: -4px;
+    animation: anime 1s forwards;
+    z-index: 3;
+}
+
+@keyframes anime{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+
+}
+
+#portfolio .item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#portfolio .item:hover .layer{
+    z-index: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#portfolio .item .layer{
+
+    background-color: RGBA(255, 255, 255, 0.95);
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    color: black;
+    z-index: -1;
+    transition: all .7s;
+}
+
+
+#portfolio .item .layer h6{
+    color: #343434;
+    font-size: 15px ;
+    font-weight: 700;
+    padding-bottom: 20px;
+    transition: padding-bottom .8s;
+}
+
+#portfolio .item:hover h6{
+    padding-bottom: 0;
+}
+
+#portfolio .item .layer .icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    transition: padding-top .8s;
+}
+
+#portfolio .item:hover .icons{
+    padding-top: 0;
+}
+
+#portfolio .item .layer .icons i{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border-radius:50%;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    transition: all .3s;
+}
+
+
+#portfolio .item .layer .icons i:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+#testimonials .caro img{
+    width: 7%;
+    border-radius: 50%;
+}
+
+#testimonials .caro p{
+    color: #748182;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+#testimonials .caro h6{
+    color: #343434;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#testimonials .caro span{
+    color: #888888;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width:992px) {
+    #testimonials .caro img{
+        width: 20%;
+    }
+}
+ 
+
+@media (max-width:992px) {
+    #testimonials .caro p{
+        padding:10px 0 !important;
+    }
+}
+
+.carousel-indicators{
+    position: static;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #869791;
+}
+
+
+.items .item i{
+    color: #343434;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.items .item h2{
+    color: #343434;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.items .item p{
+    color: #748182;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#team .item{
+    background-color: #5B5B5B;
+    color: white;
+}
+
+#team .item h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#team .item h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+#team .car{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#team .car img{
+    transition: transform .5s;
+}
+
+#team .car:hover img{
+    transform: scale(1.2);
+}
+
+#team .car .lay{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: RGBA(255, 255, 255, 0.95);
+    transform: rotatey(180deg);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    z-index: -1;
+    transition: width .8s, height .8s, transform .8s;
+}
+
+#team .caro:hover .car .lay{
+    z-index: 0;
+    width: 95%;
+    height: 95%;
+    transform: rotatey(360deg);
+    animation: in .8s;
+}
+
+
+
+@keyframes in{
+    0%{
+        opacity: .2;
+    }
+    50%{
+        opacity: .7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes out{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+#team .car .lay i{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    margin: 8px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#team .car .lay i:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+#contact .con i{
+    background-color: #F7F7F7;
+    color: black;
+    font-size: 25px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+#contact .con h6{
+    color: #343434;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#contact .con p{
+    color: #748182;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#contact .con:hover i{
+    background-color: black;
+    color: white;
+}
+  
+@media (max-width:992px) {
+    .form{
+        padding:5px 0 0 0 !important;
+        margin-left:0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+  .form-control:focus{
+    box-shadow: none;
+  }
+
+
+  #contact .butto{
+    transition: all .3s;
+  }
+
+
+  #contact .butto:hover{
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+  }
+
+footer{
+    background-color: #1C1C1C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+  footer p{
+    color: #748182;
+    font-size: 13px;
+  }
